@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandera de México | Graficación</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="contenedor">
+    <section class="tarjeta">
+      <header class="encabezado">
+        <p class="materia">Graficación · Práctica 1.4</p>
+        <h1>Bandera de México</h1>
+        <p class="subtitulo">Control interactivo de los colores verde y rojo</p>
+      </header>
+
+      <section class="controles">
+        <div class="control">
+          <label for="verde">Esperanza</label>
+          <input id="verde" type="range" min="0" max="255" value="104">
+          <output id="hexVerde">#006800</output>
+        </div>
+
+        <div class="control">
+          <span>Unidad</span>
+          <div class="linea-blanca"></div>
+          <output>#FFFFFF</output>
+        </div>
+
+        <div class="control">
+          <label for="rojo">Sangre de nuestros héroes nacionales</label>
+          <input id="rojo" type="range" min="0" max="255" value="206">
+          <output id="hexRojo">#CE0000</output>
+        </div>
+      </section>
+
+      <section class="bandera">
+        <div id="franjaVerde" class="franja verde"></div>
+        <div class="franja blanco">
+          <img class="escudo" src="escudo.png" alt="Escudo Nacional de México">
+        </div>
+        <div id="franjaRoja" class="franja rojo"></div>
+      </section>
+
+      <section class="datos-alumnos">
+        <article class="alumno">
+          <h2>Alumno 1</h2>
+          <p><strong>Nombre:</strong> Díaz Jiménez Julio Emanuel</p>
+          <p><strong>Número de control:</strong> 24200260</p>
+        </article>
+        <article class="alumno">
+          <h2>Alumno 2</h2>
+          <p><strong>Nombre:</strong> Perez Gomez Jocelyn Patricia</p>
+          <p><strong>Número de control:</strong> 24200830</p>
+        </article>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
